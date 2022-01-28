@@ -1,0 +1,369 @@
+@media (max-width: 1399px) {
+	.home-head .container,
+	.everyone-can-win .container,
+	.footer .container,
+	.navbar .container {
+		max-width: 90%;
+	}
+	.learn-more-row {
+		margin-top: 30px;
+	}
+	.video-player-socials a img {
+		width: 35px;
+	}
+	.work-card h2 {
+		font-size: 1.7rem;
+	}
+	p {
+		font-size: 16px !important;
+	}
+	.main-heading {
+		font-size: 65px;
+	}
+	.idea-card h2 {
+		font-size: 27px;
+	}
+	.idea-icon img {
+		height: 50px;
+	}
+	.idea-icon {
+		padding: 0 20px;
+	}
+	.idea-icon h3 {font-size: 16px}
+	.btn {font-size: 14px}
+	.footer-bottom-links {margin-top: -40px}
+	.navbar .nav-link {font-size: 1.05rem}
+	.navbar .start-now .nav-link {padding: 8px 30px}
+	.faq .accordion-button {font-size: 18px}
+
+}
+
+@media (max-width: 1199px) {
+	.video-player-socials a img {
+		width: 27px;
+	}
+	.home-head-logo img {width: 300px}
+	.home-head .main-heading {font-size: 50px}
+	p {font-size: 15px !important}
+	.work-card .work-card-number {
+	    left: -50px;
+	    top: -50px;
+	    width: 100px;
+	}
+	.work-card {padding: 40px 30px; width: 100%}
+	.go-down {font-size: 34px}
+	.work-icon-card img {width: 90%}
+	.work-icon-card {padding: 0 20px}
+	.footer-bottom-links {margin-top: -20px}
+	.idea-icon {padding: 0 6px}
+	.home-head-left p {padding-right: 15%}
+	.learn-more-row {margin-top: 60px}
+	.navbar .nav-link {font-size: 0.9rem}
+	.win-info .first-win-text {font-size: 24px !important}
+	.footer-links a {font-size: 16px}
+	.footer-links {padding-top: 38px}
+	.footer-bottom-links a {font-size: 12px}
+	.footer-bottom-links {margin-top: -34px}
+	.episode {border: 7px solid black;}
+}
+@media (max-width: 991px) {
+	.work-card h2 {font-size: 1.4rem}
+	p {font-size: 14px !important}
+	.work-card {padding: 30px 20px}
+	.work-card-img img {width: 50%}
+	.main-heading {font-size: 55px}
+	.work-icon-card {padding: 0}
+	.why-work {padding: 70px 90px 80px}
+	.idea-card {padding: 34px}
+	.idea-card h2 {
+	    font-size: 24px;
+	    line-height: 30px;
+	    display: inline-block;
+	    margin-bottom: 20px;
+	}
+	.idea-card p {margin-top: 14px}
+	.contact-info img {height: 120px}
+	.contact h1.main-heading {font-size: 2.4rem !important}
+	.got-some-questions {padding: 85px 0}
+	.work-icon-card img {width: 80%}
+	.footer-bottom-links {margin-top: -20px}
+	.footer-links a {margin-right: 15px}
+	.footer-links {
+	    padding-top: 22px;
+	}
+	.footer-social {
+		padding: 0;
+		margin: 20px 0;
+	}
+	.footer-links a {
+		text-align: center;
+		display: block;
+		margin-right: 0;
+	}
+	.footer-social {
+		justify-content: center !important;
+	}
+	.footer-social .fab {
+		margin: 0 10px;
+	}
+	.footer-bottom-links a {
+		display: block;
+		text-align: center;
+	}
+	.footer-bottom-links {
+		display: block !important;
+		margin-top: 10px;
+	}
+	.footer-bottom-links span {
+		display: none;
+	}
+	.footer-logo img {
+		width: 145px !important;
+		margin: auto;
+		display: block;
+		margin-top: 20px;
+	}
+	.foot-bar,
+	.copyright {
+		text-align: center !important;
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.copyright br {display: block}
+	.copyright {margin-bottom: 27px}
+	.foot-bar a {font-size: 12px}
+	.home-head .main-heading {font-size: 40px}
+	.navbar-light .navbar-toggler-icon {
+		background-image: url('/assets/images/burger.svg');
+	}
+	.navbar-light .navbar-toggler {border: none}
+	.home-navbar .navbar-brand img {display: block; height: 90px}
+	.navbar-brand img {display: block; height: 90px}
+	.home-head-logo img {display: none}
+	.home-head-left {margin-top: 125px}
+	.navbar-collapse {
+		background: #28b4ff;
+	    border-radius: 10px;
+	    box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+	    z-index: 3;
+	    padding: 10px 20px;
+	}
+	.navbar .start-now .nav-link {
+	    padding: 8px 30px;
+	    display: inline-block;
+	    margin-top: 10px;
+	}
+	.win-info {
+	    position: relative;
+	    top: 0;
+	    transform: none;
+	}
+	.episode {border: 5px solid black;}
+	.home-head-left {margin-top: 34px;text-align: center !important}
+	.home-head-left p {padding-right: 0}
+	.home-head .main-heading {font-size: 32px; line-height: 40px}
+	.home-head {padding-bottom: 0}
+	.navbar-toggler {display: none}
+}
+@media (max-width: 767px) {
+	.video-player-socials {display: none}
+	
+	.everyone-can-win {
+		background: url('/assets/images/home/mob-bg.jpg') no-repeat;
+		background-size: cover;
+		background-position: top;
+		padding-top: 0;
+	}
+	.win-vince img {width: 75%; position: relative;left: -15px;}
+	.win-vince {margin-top: -150px}
+	.learn-more-row {margin-top: 80px}
+	.arr-down1 {
+	    position: absolute;
+	    right: 20%;
+	    bottom: -60px;
+	    width: 50px;
+	}
+	.arr-down2 {
+	    position: absolute;
+	    left: 20%;
+	    bottom: -60px;
+	    width: 50px;
+	}
+	.work-card .work-card-number {
+	    left: 30px;
+	    top: 30px;
+	}
+	.w-c-2 .work-card-number {
+		left: unset;
+		right: 30px;
+	}
+	.w-c-2 .work-card-img {
+		text-align: left !important;
+	}
+	.w-c-3 .d-blue {
+		color: var(--red) !important;
+	}
+	.work-card-dots {
+		display: none;
+	}
+	.work-icon-card img {width: 100px}
+	.why-work {padding: 40px 20px 50px}
+	.main-heading {font-size: 32px}
+	.work-icon-card {padding: 0 150px}
+	.why-work-dots {display: none}
+	.work {background: var(--blue)}
+	.go-down {font-size: 24px}
+	.w-c-2 {margin-top: 70px}
+	.work-card {margin-top: 50px}
+	.work {padding: 60px 0 0}
+	.learn-more-row img {
+	    width: 50px;
+	    position: relative;
+	    left: 30px;
+	    top: -5px;
+	}
+	.get-started-row img {
+	    position: relative;
+	    left: 40px;
+	    top: -5px;
+	    width: 50px;
+	}
+	.your-idea .main-heading {line-height: 40px}
+	.idea-card h2 {font-size: 20px}
+	p {font-size: 12px !important}
+	.icon-card-dots {display: none}
+	.upload-now-row img {
+	    width: 50px;
+	    top: 0;
+	    right: 20px;
+	}
+	.upload-now-row {
+	    margin-top: 50px;
+	    margin-bottom: 50px;
+	}
+	.contact-info {
+		text-align: center;
+	}
+	#filerequestpro {
+		margin: auto;
+	    min-width: 100px;
+	    height: 600px;
+	    width: 101%;
+	    margin-top: 60px !important;
+	}
+	.got-some-questions p {margin: 0 0 14px}
+	.got-some-questions {padding: 60px 0}
+	.work-card-img img {height: 150px}
+
+	/* FAQ PAGE */
+	.faq-page {background: var(--blue) !important}
+	.episode {
+		border: 10px solid black;
+		margin-bottom: 25px;
+	}
+	.fixed-toggle-btn {
+		top: -3px;
+		right: 4px;
+	}
+}
+@media (max-width: 575px) {
+	.work-card {margin-top: 30px}
+	.w-c-2, .w-c-3 {margin-top: 70px}
+	.upload-now-row {margin-right: 20px}
+	.upload-now-row {
+	    margin-top: 30px;
+	    margin-bottom: 20px;
+	}
+	.faq {border-radius: 20px !important}
+	.get-started-row {margin-top: 50px}
+	.home-navbar {padding-top: 10px}
+	.video-player {margin-top: 90px}
+	.win-vince {margin-top: -80px}
+	.learn-more-row {margin-top: 65px}
+	.home-head {padding-bottom: 115px}
+	.win-info {margin-top: 40px}
+	.win-info .first-win-text {
+		font-size: 16px !important;
+		margin: 10px 0;
+	    line-height: 23px;
+	}
+	.everyone-can-win {padding-bottom: 60px}
+	.work-card h2 {font-size: 1.35rem}
+	.work-card .work-card-number {width: 80px}
+	.why-work {margin-top: 30px}
+	.work-icon-card p {
+	    line-height: 20px;
+	    width: 158px;
+	    margin: 24px auto 0;
+	}
+	.work-icon-card {padding: 0 50px}
+	.contact {padding: 60px 0}
+	.footer-links a,
+	.footer-bottom-links a {
+	    font-size: 12px;
+	    line-height: 30px;
+	}
+	.footer {padding: 20px 0 40px}
+	.play-btn img {width: 24px}
+	.home-head-left p {line-height: 20px}
+	.btn {font-size: 12px}
+	.idea-icon {margin-top: -20px}
+	.idea-icon img {height: 34px}
+	.idea-icon h3 {
+	    font-size: 13px;
+	    line-height: 16px;
+	    width: 110px;
+	    margin: 15px auto 0;
+	}
+	.col-12 .idea-icon {margin-top: 20px}
+	.home-head .container, .everyone-can-win .container, .footer .container, .navbar .container {max-width: 100%}
+	.win-vince img {left: -7px}
+	.idea-card {padding: 24px 20px}
+
+	/* FAQ PAGE */
+	.faq-page {padding: 120px 0 20px}
+	.questions h1.main-heading {font-size: 32px}
+	.questions p {margin: 0 0 12px}
+	.faq .accordion-item {
+	    background: transparent;
+	    box-shadow: none;
+	    border: none;
+	}
+	.faq .accordion-button:not(.collapsed),
+	.faq .accordion-button {background: transparent; border: none;}
+	.faq {padding: 0}
+	.faq .accordion-button {font-size: 16px}
+	.faq .card-body {padding-top: 0}
+	.questions {margin: 40px 0 40px}
+	.faq-page .main-heading {line-height: 40px}
+
+	/* EPISODES PAGE CSS */
+	.episodes {margin-top: 40px}
+	.episode {margin-bottom: 5%}
+	.watch-more {margin: 15px 0 40px}
+	.watch-more p:first-child {font-size: 14px !important}
+	.great-idea-row {margin-bottom: 40px}
+	.sidenav .closebtn {
+	    top: 30px;
+	    right: 3%;
+	}
+	.sidenav-links {
+	    position: absolute;
+	    width: 100%;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    margin-top: 0;
+	}
+	.sidenav-links a {font-size: 18px}
+	#terms-modal .modal-content {
+		border-radius: 20px;
+		padding: 10px;
+		padding-bottom: 20px;
+	}
+	#terms-modal * {
+		font-size: 12px;
+	}
+	#terms-modal .modal-body ol, #terms-modal .modal-body ul {
+		padding-left: 0;
+	}
+}

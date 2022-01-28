@@ -1,0 +1,12 @@
+<div class="row episodes">
+	{{ range .Site.Data.video }}
+		<div class="col-lg-4 col-md-6">
+			<div class="episode">
+				<div class="video_wrapper video_wrapper_full js-videoWrapper">
+					<iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="{{ .src }}"></iframe>
+					<button class="videoPoster js-videoPoster" style="background-image:url({{ .thumbnail }});"></button>
+				</div>
+			</div>	
+		</div>
+	{{ end }}
+</div>

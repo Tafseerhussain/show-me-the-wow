@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{.Title}}</title>
+<meta name="description" content="Think you've got a million dollar idea? Wow Vince & the public & it could become a reality.">
+<meta content="" name="keywords">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7MFYTWHGWV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7MFYTWHGWV');
+</script>
+
+<!-- userback tag 
+<script>
+    window.Userback = window.Userback || {};
+    Userback.access_token = '30588|61560|VHOXgVuZWIymHCWiRZyPQ9bdL';
+    (function(d) {
+        var s = d.createElement('script');s.async = true;
+        s.src = 'https://static.userback.io/widget/v1.js';
+        (d.head || d.body).appendChild(s);
+    })(document);
+</script>-->
+
+<!-- social sharing -->
+<meta property="og:url" content="{{.Site.BaseURL}}" />
+<meta property="og:site_name" content="{{.Title}}">
+<meta property="og:title" content="{{.Title}}" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content= "Think you've got a million dollar idea? Wow Vince & the public & it could become a reality." />
+<meta property="og:image" content="{{.Site.BaseURL}}/assets/images/social-logo.jpg">
+<meta property="og:image:secure_url" itemprop="image" content="{{.Site.BaseURL}}/assets/images/social-logo.jpg" />
+
+<!-- twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Think you've got a million dollar idea? Wow Vince & the public & it could become a reality." />
+<meta name="twitter:title" content="{{.Title}}" />
+<meta name="twitter:image" content="{{.Site.BaseURL}}/assets/images/social-logo.jpg" />
+
+<!-- external files -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/880faea4a7.js" crossorigin="anonymous"></script>
+
+<!-- internal files -->
+<link rel="stylesheet" href="{{.Site.BaseURL}}/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/responsive.css">
+<link rel="icon" type="image/png" href="/assets/images/favicon.png"/>
+<script type="text/javascript" src="{{.Site.BaseURL}}/assets/js/bootstrap.bundle.min.js"></script>
+<script src="/main.js"></script>	
+
+<!-- add Netlify identity -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<!-- Cloudflare API -->
+<script src="https://embed.videodelivery.net/embed/sdk.latest.js"></script>
+
+<!-- scroll reveal -->
+<script src="https://unpkg.com/scrollreveal@4"></script>

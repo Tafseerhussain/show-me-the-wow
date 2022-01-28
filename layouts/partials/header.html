@@ -1,0 +1,68 @@
+{{ if .IsHome }}
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent home-navbar">
+{{ else }}
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+{{ end }}
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="/assets/images/logo.png">
+    </a>
+    <span class="fixed-toggle-btn d-md-none position-relative" onclick="openNav()" style="cursor: pointer;">
+        <img src="/assets/images/burger.svg">
+    </span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          {{ if .IsHome }}
+            <a class="nav-link text-shadow active" href="/">Home</a>
+          {{ else }}
+            <a class="nav-link text-shadow" href="/">Home</a>
+          {{ end }}
+        </li>
+        <li class="nav-item text-shadow">
+          <a class="nav-link" href="/#how-does-it-work">How It Works</a>
+        </li>
+        <li class="nav-item text-shadow">
+          {{ if eq .Type "episodes" }}
+            <a class="nav-link active" href="/episodes">Episodes</a>
+          {{ else }}
+            <a class="nav-link" href="/episodes">Episodes</a>
+          {{ end }}
+          
+        </li>
+        <li class="nav-item text-shadow">
+          {{ if eq .Type "faq" }}
+            <a class="nav-link active" href="/faq">FAQs</a>
+          {{ else }}
+            <a class="nav-link" href="/faq">FAQs</a>
+          {{ end }}
+        </li>
+        <li class="nav-item start-now">
+          <a class="nav-link" href="/#your-idea">Start Now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="mySidenav" class="sidenav utile">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+    <img src="/assets/images/close.png" alt="">
+  </a>
+  <div id="sidenav-content">
+    <div class="sidenav-logo d-md-none d-block">
+      <a href="/"><img src="/assets/img/logo.png" alt=""></a>
+    </div>
+    <div class="sidenav-links text-uppercase">
+      <a href="/">Home</a>
+      <a href="/#how-does-it-work">How It Works</a>
+      <a href="/episodes">Episodes</a>
+      <a href="/faq">FAQs</a>
+      <a href="#start-now">Start Now</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+
+<head>
+
+  {{ block "head" . }}{{ partial "head" . }}{{end}}
+
+</head>
+
+<body>
+
+  <div class="preloader">
+      <img src="/assets/images/logo.png" class="preloader-img" alt="">
+  </div>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Show Me The Wow",
+      "url": "https://showmethewow.com/",
+      "sameAs": [
+        "https://www.instagram.com/showmethewow/",
+        "https://www.tiktok.com/@showmethewow",
+        "https://www.youtube.com/channel/showmethewow",
+        "https://www.facebook.com/showmethewow",
+        "https://www.linkedin/showmethewow"
+      ]
+    }
+  </script>
+
+  {{ block "header" . }}{{ partial "header" . }}{{end}}
+
+  <main>
+
+  {{ block "main" . }}{{end}}
+
+  </main>
+
+  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2 order-4 order-lg-1">
+				<a href="/" class="footer-logo">
+					<img src="/assets/images/logo.png" class="w-100" alt="Show Me The Wow logo">
+				</a>
+			</div>
+			<div class="col-lg-7 order-1 order-lg-2">
+				<div class="footer-links d-lg-flex justify-content-start">
+					<a href="/">Home</a>
+					<a href="/#how-does-it-work">How It Works</a>
+					<a href="/episodes">Episodes</a>
+					<a href="/faq">FAQ's</a>
+					<a href="/#your-idea">Submit Idea</a>
+				</div>
+			</div>
+			<div class="col-lg-3 order-2 order-lg-3">
+				<div class="footer-social d-flex justify-content-end">
+						<!--<a href="https://www.facebook.com/showmethewow/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.linkedin.com/showmethewow/" target="_blank"><i class="fab fa-linkedin"></i></a>-->
+						<a href="https://www.instagram.com/showmethewow/" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="https://www.tiktok.com/@showmethewow" target="_blank"><i class="fab fa-tiktok"></i></a>
+						<a href="https://www.youtube.com/channel/showmethewow" target="_blank"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+			<div class="col-lg-10 offset-lg-2 order-3 order-lg-4">
+				<div class="footer-bottom-links d-md-flex justify-content-start text-white">
+					<a href="/assets/files/privacy-policy.pdf" target="_blank">Privacy Policy</a> <span>|</span>
+					<a href="/assets/files/cookie-policy.pdf" target="_blank">Cookie Policy</a> <span>|</span>
+					<a href="/assets/files/website-terms.pdf" target="_blank">Website Terms</a> <span>|</span>
+					<a href="/assets/files/contestant-terms.pdf" target="_blank">Contestant Terms</a>
+				</div>
+			</div>
+		</div>
+		<div class="row foot-bar text-white mt-5">
+			<div class="col-lg-6 order-2 order-lg-1">
+				<a href="https://colonywebsolutions.com/" target="_blank" class="empowered-by">
+					Empowered by COLONY Web Solutions
+				</a>
+			</div>
+			<div class="col-lg-6 text-end order-1 order-lg-2">
+				<div class="copyright">
+					© 2021 SHOW ME THE WOW. <br>All Rights Reserved.
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).on('click','.js-videoPoster',function(e) {
+		  e.preventDefault();
+		  var poster = $(this);
+		  var wrapper = poster.closest('.js-videoWrapper');
+		  videoPlay(wrapper);
+	});
+
+	function videoPlay(wrapper) {
+		  var iframe = wrapper.find('.js-videoIframe');
+		  var src = iframe.data('src');
+		  wrapper.addClass('videoWrapperActive');
+		  iframe.attr('src',src);
+	}
+</script>
+<script>
+  	const player = Stream(document.getElementById('stream-player'))
+  	$('.play-btn').fadeOut();
+  	$('.vince-thumbnail').fadeOut();
+    player.muted = true;
+  	player.play();
+  	player.addEventListener('play', () => {
+    	console.log('playing!')
+  	});
+ //  	$('.play-btn').click(function() {
+ //  		$(this).fadeOut();
+ //  		$('.vince-thumbnail').fadeOut();
+	//   	player.addEventListener('play', () => {
+	//     	console.log('playing!')
+	//     	player.muted = true
+	//   	})
+	//   	player.play().catch(() => {
+	//     	console.log('playback failed, muting to try again')
+	//     	player.muted = true
+	//     	player.play()
+	//   	})	
+	// });
+  	$('.volume-on').click(function() {
+  		player.muted = true
+  		$('.volume-on').css('display','none')
+  		$('.volume-off').css('display','block')
+  	})
+  	$('.volume-off').click(function() {
+  		player.muted = false
+  		$('.volume-on').css('display','block')
+  		$('.volume-off').css('display','none')
+  	})
+  	$(video).click(function() {
+  		player.pause()
+  	})
+</script>
+<script>
+    window.sr = ScrollReveal({
+        distance: '0px',
+        duration: 1000,
+        scale: 1,
+        easing: 'ease',
+        mobile: false,
+        reset: false,
+        viewFactor: 0.2,
+    });
+    // Fade
+    sr.reveal('.fade-in');
+	sr.reveal('.fade-left',{origin: 'left', distance: '100px', duration: 500,});
+    sr.reveal('.fade-right',{origin: 'right', distance: '100px', duration: 500,});
+    sr.reveal('.fade-left-delay',{origin: 'left', distance: '100px', duration: 500, delay: 750,});
+    sr.reveal('.fade-right-delay',{origin: 'right', distance: '100px', duration: 500, delay: 750,});
+    sr.reveal('.fade-bottom',{origin: 'bottom', distance: '100px', duration: 500,});
+    // Delay
+    sr.reveal('.delay-500',{ delay: 500 });
+    sr.reveal('.delay-1000',{ delay: 1000 });
+	sr.reveal('.delay-1250',{ delay: 1250 });
+    sr.reveal('.delay-1500',{ delay: 1500 });
+	sr.reveal('.delay-2000',{ delay: 2000 });
+	sr.reveal('.delay-4000',{ delay: 4000 });
+    // Rotate
+    ScrollReveal().reveal('.rotate-left', {rotate: {z: -25,}});
+    ScrollReveal().reveal('.rotate-right', {rotate: {z: 25,}});
+    // Scale
+    ScrollReveal().reveal('.scaleUp', { scale: 0.85 });
+
+    const myDiv = document.querySelector('.modal-body')  
+	myDiv.addEventListener('scroll', () => {  
+	  if (myDiv.offsetHeight + myDiv.scrollTop >= myDiv.scrollHeight) {  
+	    $('.accept-terms-btn').css("opacity", "1"); 
+	  }  
+	})
+	$('.accept-terms-btn').click(function() {
+		$('#filerequestpro').css('opacity', '1');
+		$('#filerequestpro').css('pointer-events', 'all');
+		$('.before-terms-accepted').css('display', 'none');
+		$('.terms-accepted').fadeIn();
+	})
+
+	var formStatus = $("#filerequestpro").css('pointer-events');
+	
+	$('#filerequestpro').click(function() {
+		alert('test')
+	})
+	$('.formStatus').click(function () {
+		if (formStatus == 'none') {
+			alert('Please accept the contestant terms before submitting your idea')
+		} else {
+			alert('not none')
+		}
+	})
+</script>
+
